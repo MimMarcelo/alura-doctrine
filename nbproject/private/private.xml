@@ -4,8 +4,12 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/insync/Projects/NetBeansProjects/alura-doctrine/composer.json</file>
+            <file>file:/C:/insync/Projects/NetBeansProjects/alura-doctrine/src/entity/Aluno.php</file>
+            <file>file:/C:/insync/Projects/NetBeansProjects/alura-doctrine/src/entity/Telefone.php</file>
+            <file>file:/C:/insync/Projects/NetBeansProjects/alura-doctrine/commands/criar-aluno.php</file>
             <file>file:/C:/insync/Projects/NetBeansProjects/alura-doctrine/src/helper/EntityManagerFactory.php</file>
             <file>file:/C:/insync/Projects/NetBeansProjects/alura-doctrine/index.php</file>
+            <file>file:/C:/insync/Projects/NetBeansProjects/alura-doctrine/commands/buscar-alunos.php</file>
         </group>
     </open-files>
 </project-private>
