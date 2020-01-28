@@ -16,7 +16,7 @@ class EntityManagerFactory {
             'host'     => 'localhost',
             'user'     => 'root',
             'password' => 'Senha123#',
-            'dbname'   => 'guia_financeiro'
+            'dbname'   => 'alura_doctrine'
         ];
         return EntityManager::create($connection, $config);
     }
