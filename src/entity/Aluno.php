@@ -24,7 +24,7 @@ class Aluno {
     private $nome;
 
     /**
-     * @OneToMany(targetEntity="Telefone", mappedBy="aluno", cascade={"remove", "persist"})
+     * @OneToMany(targetEntity="Telefone", mappedBy="aluno", cascade={"remove", "persist"}, fetch="EAGER")
      */
     private $telefones;
 
@@ -50,7 +50,10 @@ class Aluno {
     function getTelefones(): Collection {
         return $this->telefones;
     }
-    
+    /**
+     * 
+     * @return Curso[]
+     */
     public function getCursos(): Collection {
         return $this->cursos;
     }
@@ -65,7 +68,7 @@ class Aluno {
         $telefones->setAluno($this);
         return $this;
     }
-    public function addCursos(Curso $curso): self {
+    public function addCurso(Curso $curso): self {
         if(!$this->cursos->contains($curso)){
             $this->cursos->add($curso);
             $curso->addAlunos($this);
