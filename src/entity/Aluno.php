@@ -5,7 +5,7 @@ namespace mimmarcelo\doctrine\entity;
 use Doctrine\Common\Collections\Collection;
 use \Doctrine\Common\Collections\ArrayCollection;
 /**
- * @Entity
+ * @Entity(repositoryClass="mimmarcelo\doctrine\repository\AlunoRepository")
  */
 class Aluno {
 

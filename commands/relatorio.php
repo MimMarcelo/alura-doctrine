@@ -10,12 +10,14 @@ $entityManagerFactory = new EntityManagerFactory();
 $entityManager = $entityManagerFactory->getEntityManager();
 $repository = $entityManager->getRepository(Aluno::class);
 
-$classeAluno = Aluno::class;
-$dql = "SELECT aluno, telefones, cursos FROM $classeAluno aluno LEFT JOIN aluno.telefones telefones LEFT JOIN aluno.cursos cursos";
-$query = $entityManager->createQuery($dql);
+//$classeAluno = Aluno::class;
+//$dql = "SELECT aluno, telefones, cursos FROM $classeAluno aluno LEFT JOIN aluno.telefones telefones LEFT JOIN aluno.cursos cursos";
+//echo "\n\n$dql\n\n";
+//$query = $entityManager->createQuery($dql);
 
 /** @var Aluno[] $alunos **/
-$alunos = $query->getResult();
+//$alunos = $query->getResult();
+$alunos = $repository->buscarCursosPorAluno();
 //$alunos = $repository->findAll();
 
 foreach ($alunos as $aluno) {
